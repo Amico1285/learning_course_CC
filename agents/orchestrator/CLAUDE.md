@@ -18,64 +18,59 @@ You are an **orchestrator agent** — a product manager and system architect who
 
 ## Workflow
 
-1. **Read state** — `context.md`, tasks and todo list if exists.
+1. **Read state** — `context.md`, tasks and todo list if exists
 2. **Discuss with user** — explain what you're about to do, confirm the approach
-4. **Create Tasks** - create detailed list of tasks if they weren't exist
-3. **Launch sub-agents** — only after user confirms launch sub agents and ping them with 'ping' word to get their ID. Always send agent to backgraund. Never wait.
-4. **Create 'agent ID'.md** - create file for agent aoutput and instruct agent to do the task
-4. **Report progress** — update `context.md` with agent ID
-5. **Check progress** — when agent finish the task, asign it next task if it benefits from previous context or launch new agent if not
+3. **Create Tasks** — create detailed list of tasks if they don't exist
+4. **Launch sub-agents** — after user confirms, launch with full task immediately. Always use `run_in_background=true`
+5. **Log progress** — update `context.md` with agent ID (from Task response)
+6. **Check progress** — when agent finishes, assign next task (if benefits from context) or launch new agent
 
 ## File Structure
 
 ```
 agents/
 ├── orchestrator/
-│   ├── CLAUDE.md       # These instructions (don't modify)
+│   ├── CLAUDE.md       # These instructions
 │   └── context.md      # Current state: plan, progress, active agents
 ├── sub-agents/         # Detailed logs from each sub-agent
-│   └── {agent_id}.md
-
+│   └── {task-name}.md  # Named by task, not by ID
 ```
-
 
 ## Working with Sub-Agents
 
 ### Launching a sub-agent:
 
-1. Start with a greeting to get the agent ID:
+1. Get current datetime: `date "+%m-%d %H:%M"`
+2. Launch agent with full task immediately (ID comes in response):
    ```
-   Task(subagent_type="general-purpose", prompt="ping")
+   Task(
+     subagent_type="general-purpose",  # or "web-researcher" for research tasks
+     prompt="## Task\n{full task description}...",
+     run_in_background=true
+   )
    ```
-2. Agent responds and you receive `agentId: abc123`
-3. Create `agents/sub-agents/abc123.md`
-4. Get current datetime: `date "+%m-%d %H:%M"`
-5. Update `context.md`: "{datetime} → abc123: {task description}"
-6. Send the full task using resume:
-   ```
-   Task(resume="abc123", prompt="Your ID: abc123\n\n## Task\n...")
-   ```
+3. From response, extract `agentId: abc123`
+4. Update `context.md`: "{datetime} -> abc123: {task description}"
+5. Create `agents/sub-agents/{task-name}.md` for agent output (optional)
 
 ### Prompt template:
 
 ```
-Your ID: {agent_id}
-
 ## Task
 {detailed task description with context, requirements, and constraints}
 
 ## Approach
-1. use Glob/Grep to locate relevant files
+1. Use Glob/Grep to locate relevant files
 2. Research the relevant code — understand the current architecture
 3. Plan your changes before implementing
 4. Implement with attention to existing patterns and conventions
 5. Verify your changes work correctly
 
 ## Reporting
-- Write detailed progress, decisions, and technical details to: agents/sub-agents/{agent_id}.md
-- Return to me a summary covering:
+- Write detailed progress to: agents/sub-agents/{task-name}.md
+- Return summary covering:
   - What you researched and found
-  - Key decisions you made and why
+  - Key decisions and why
   - What you implemented (file:line references)
   - Any issues or concerns
   - What should be done next (if applicable)
@@ -84,17 +79,23 @@ Your ID: {agent_id}
 ### After sub-agent returns:
 
 1. Get current datetime: `date "+%m-%d %H:%M"`
-2. Update `context.md`: "{datetime} ✓ {agent_id}: {brief summary}"
-3. Check if agent updated asigned task. Update if it is not updated
+2. Update `context.md`: "{datetime} OK {agent_id}: {brief summary}"
+3. Check if agent updated assigned task. Update if not
+
+### Resuming an agent:
+
+Use `resume` only for agents that are **still running** or need continuation:
+```
+Task(resume="abc123", prompt="Continue with next step...")
+```
 
 ## context.md Format
 
 ```markdown
-
 # Progress Log
-- 12-27 14:30 → abc123: implement /submit endpoint
-- 12-27 14:35 ✓ abc123: added POST /submit in server.py
-- 12-28 09:15 → def456: add tests for /submit
+- 12-27 14:30 -> abc123: implement /submit endpoint
+- 12-27 14:35 OK abc123: added POST /submit in server.py
+- 12-28 09:15 -> def456: add tests for /submit
 
 # Active Agents
 | ID | Task | Status |

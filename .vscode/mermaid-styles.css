@@ -1,0 +1,30 @@
+/* Выравнивание Mermaid диаграмм по левому краю */
+div.mermaid,
+.mermaid,
+pre.mermaid,
+.vscode-body .mermaid,
+.markdown-body .mermaid,
+[data-mermaid] {
+    text-align: left !important;
+    margin-left: 0 !important;
+    display: block !important;
+}
+
+.mermaid svg,
+div.mermaid svg,
+pre.mermaid svg {
+    display: block !important;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    max-width: 100% !important;
+}
+
+/* Для разных расширений Mermaid */
+.mermaid-diagram {
+    text-align: left !important;
+}
+
+figure.mermaid {
+    margin-left: 0 !important;
+    text-align: left !important;
+}

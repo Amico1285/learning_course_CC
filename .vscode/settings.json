@@ -1,0 +1,5 @@
+{
+    "markdown.styles": [
+        ".vscode/mermaid-styles.css"
+    ]
+}
