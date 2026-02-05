@@ -34,11 +34,11 @@ xychart-beta
 
 ### Разрыв растет
 
-![The rich get richer](../images/rich-get-richer.png)
+![The rich get richer](images/rich-get-richer.png)
 
 *Ранние adopters наращивают преимущество, отстающие отстают еще больше. Прогноз: 10x разрыв к 2030 ([Stanford SWEPRI](https://softwareengineering.stanford.edu/))*
 
-![Uniform access doesn't guarantee uniform usage](../images/uniform-access.png)
+![Uniform access doesn't guarantee uniform usage](images/uniform-access.png)
 
 *Одинаковый доступ к AI-инструментам не гарантирует одинаковое использование. Два подразделения одной компании - радикально разный уровень adoption ([Stanford SWEPRI](https://softwareengineering.stanford.edu/))*
 
