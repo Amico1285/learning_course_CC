@@ -94,13 +94,13 @@ xychart-beta
 
 | Model | Context Window | 1K | 32K | Падение |
 |-------|----------------|-----|------|---------|
-| <span style="color:#1f77b4">&#9679;</span> GPT-4o | 128K | 100% | 65% | -35% |
-| <span style="color:#ff7f0e">&#9679;</span> GPT-4o mini | 128K | 88% | 45% | -43% |
-| <span style="color:#9467bd">&#9679;</span> Llama 3.3 70B | 128K | 98% | 30% | -68% |
-| <span style="color:#8c564b">&#9679;</span> Llama 3.1 405B | 128K | 92% | 28% | -64% |
-| <span style="color:#2ca02c">&#9679;</span> Gemini 1.5 Pro | 2M | 85% | 27% | -58% |
-| <span style="color:#d62728">&#9679;</span> Claude 3.5 Sonnet | 200K | 85% | 28% | -57% |
-| <span style="color:#7f7f7f">&#9679;</span> Gemini 1.5 Flash | 1M | 70% | 15% | -55% |
+| ![](images/dot-blue.svg) GPT-4o | 128K | 100% | 65% | -35% |
+| ![](images/dot-orange.svg) GPT-4o mini | 128K | 88% | 45% | -43% |
+| ![](images/dot-purple.svg) Llama 3.3 70B | 128K | 98% | 30% | -68% |
+| ![](images/dot-brown.svg) Llama 3.1 405B | 128K | 92% | 28% | -64% |
+| ![](images/dot-green.svg) Gemini 1.5 Pro | 2M | 85% | 27% | -58% |
+| ![](images/dot-red.svg) Claude 3.5 Sonnet | 200K | 85% | 28% | -57% |
+| ![](images/dot-gray.svg) Gemini 1.5 Flash | 1M | 70% | 15% | -55% |
 
 </div>
 
