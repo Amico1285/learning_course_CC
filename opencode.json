@@ -1,0 +1,13 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "meeting-transcript": {
+      "type": "local",
+      "command": [
+        "/Users/aleksandrilinskii/Projects/Personal/YOUTUBE/.venv/bin/python",
+        "/Users/aleksandrilinskii/Projects/Personal/YOUTUBE/mcp/meeting_transcript/server.py"
+      ],
+      "enabled": true
+    }
+  }
+}
