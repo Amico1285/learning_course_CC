@@ -36,11 +36,11 @@ xychart-beta
 
 ![The rich get richer](images/rich-get-richer.png)
 
-*Ранние adopters наращивают преимущество, отстающие отстают еще больше. Прогноз: 10x разрыв к 2030 ([Stanford SWEPRI](https://softwareengineering.stanford.edu/))*
+*Ранние adopters наращивают преимущество, отстающие отстают еще больше. Прогноз: 10x разрыв к 2030 ([Stanford SWEPRI](https://youtu.be/tbDDYKRFjhk?si=gI1RGEbaqPx10u70))*
 
 ![Uniform access doesn't guarantee uniform usage](images/uniform-access.png)
 
-*Одинаковый доступ к AI-инструментам не гарантирует одинаковое использование. Два подразделения одной компании - радикально разный уровень adoption ([Stanford SWEPRI](https://softwareengineering.stanford.edu/))*
+*Одинаковый доступ к AI-инструментам не гарантирует одинаковое использование. Два подразделения одной компании - радикально разный уровень adoption ([Stanford SWEPRI](https://youtu.be/tbDDYKRFjhk?si=gI1RGEbaqPx10u70))*
 
 ## Проблема: обучение не успевает за технологией
 
