@@ -2,13 +2,13 @@
 
 ### AI эффективнее на простых задачах
 
-![AI delivers larger gains on easy tasks](../raw/05%20Task%20Complexity/Screenshot%202026-02-03%20at%2018.14.34_white.png)
+![AI delivers larger gains on easy tasks](../images/ai-gains-easy-tasks.png)
 
 *AI дает больший прирост продуктивности на простых задачах, чем на сложных. Данные по 136 командам из 27 компаний ([Stanford SWEPRI](https://youtu.be/tbDDYKRFjhk?si=gI1RGEbaqPx10u70))*
 
 <div style="margin-bottom: 150px;"></div>
 
-![Greenfield vs Brownfield productivity gains](../raw/05%20Task%20Complexity/Screenshot%202026-02-03%20at%2018.16.14_white.png)
+![Greenfield vs Brownfield productivity gains](../images/greenfield-vs-brownfield.png)
 
 *Greenfield проекты: 30-35% на простых задачах, 10-15% на сложных. Brownfield: 15-20% и 5-10% соответственно ([Stanford SWEPRI](https://youtu.be/tbDDYKRFjhk?si=gI1RGEbaqPx10u70))*
 
@@ -32,7 +32,7 @@
 
 ### AI без контроля снижает качество
 
-![AI decreased code quality case study](../raw/05%20Task%20Complexity/Screenshot%202026-02-03%20at%2018.05.28.png)
+![AI decreased code quality case study](../images/ai-code-quality.png)
 
 *Case Study: после внедрения AI качество кода упало на 9%, а вариативность выросла в 3.6 раза ([Stanford SWEPRI](https://youtu.be/JvosMkuNxF8?si=h9fM64hw2luYkpvE))*
 
@@ -40,7 +40,7 @@
 
 ### Но в чистых средах AI дает реальный буст
 
-![Clean environments allow AI to drive larger share](../raw/05%20Task%20Complexity/Screenshot%202026-02-03%20at%2017.55.24.png)
+![Clean environments allow AI to drive larger share](../images/clean-environments.png)
 
 *В чистом коде AI может автономно выполнять большую часть спринта. При высокой энтропии - разработчики теряют доверие, gains коллапсируют ([Stanford SWEPRI](https://youtu.be/JvosMkuNxF8?si=h9fM64hw2luYkpvE))*
 
