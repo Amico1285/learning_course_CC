@@ -1,3 +1,6 @@
 subagents/
 .DS_Store
 .claude/
+.opencode/
+agents/
+.mcp.json
