@@ -123,7 +123,7 @@
 
 | Приложение | Цена | Особенности |
 |------------|------|-------------|
-| [VoiceInk](https://apps.apple.com/us/app/voiceink-ai-dictation/id6751431158) (рекомендую, проверено) | $25 разово | Whisper, офлайн, open-source, LLM-обработка |
+| [VoiceInk](https://apps.apple.com/us/app/voiceink-ai-dictation/id6751431158) (рекомендую, проверено) | $25 разово | Whisper, офлайн, open-source, LLM-обработка. Лично использую с моделью `gpt-4o-mini-transcribe-2025-12-15` (endpoint: `https://api.openai.com/v1/audio/transcriptions`) - по моим наблюдениям, лучший способ голос-в-текст |
 | [Handy](https://handy.computer/) (рекомендую, проверено) | Бесплатно, open-source | Кроссплатформенный, Whisper, офлайн |
 | [Superwhisper](https://superwhisper.com/) | от $5/мес, 15 мин бесплатно | Whisper, офлайн, горячие клавиши |
 | [MacWhisper](https://goodsnooze.gumroad.com/l/macwhisper) | $69 разово / бесплатная версия | Whisper, офлайн, транскрипция файлов |
