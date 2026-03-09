@@ -2,7 +2,7 @@
 
 Репозиторий с демо-проектом для урока "Дизайнер как владелец визуального слоя продукта":
 
-https://github.com/Amico1285/learning-course-demo-lesson4
+https://github.com/Amico1285/learning-course-practice
 
 ## Что внутри
 
