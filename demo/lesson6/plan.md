@@ -175,5 +175,5 @@ repo/
 
 ## Репозиторий
 
-- Репозиторий: Amico1285/learning-course-practice
+- Репозиторий: https://github.com/Amico1285/learning-course-practice
 - GitHub Pages: https://amico1285.github.io/learning-course-practice/
