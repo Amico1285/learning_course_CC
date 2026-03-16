@@ -52,7 +52,7 @@ repo/
 
 ### Подготовка (~10 мин)
 
-1. Сделайте форк репозитория на GitHub (кнопка Fork) -- это будет ваша копия
+1. Откройте https://github.com/Amico1285/learning-course-practice и сделайте форк (кнопка Fork) -- это будет ваша копия
 2. Клонируйте свой форк и откройте его в Claude Code / opencode
 3. В терминале: `cd Demo_project && npm install && npm start`
 3. Откройте прототип в браузере (http://localhost:4200)
