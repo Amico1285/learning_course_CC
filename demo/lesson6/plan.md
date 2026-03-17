@@ -34,7 +34,7 @@
 
 - Monorepo: Storybook (компоненты и тема) + Demo_project (прототип)
 - Mock-стейт через Angular Service вместо бэкенда
-- Hash-роутинг + GitHub Pages = прототип доступен по ссылке
+- Hash-роутинг + GitHub Pages = прототип доступен по ссылке https://amico1285.github.io/learning-course-practice/
 - GitHub Actions = автоматический деплой при push
 
 Показать структуру:
