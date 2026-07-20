@@ -19,3 +19,8 @@
 - Умеет оформить повторяемый процесс в набор скиллов.
 - Имеет установленный и работающий Kaiten MCP.
 
+## Материалы
+
+1. [`01_claude_md_and_skills.md`](01_claude_md_and_skills.md) -- `CLAUDE.md` и скиллы: когда что использовать.
+2. [`02_kaiten_mcp_setup.md`](02_kaiten_mcp_setup.md) -- установка Kaiten MCP (практика).
+
